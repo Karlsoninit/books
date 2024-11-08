@@ -33,7 +33,6 @@ export class BookController {
 
     addBook = async (book: Book): Promise<AddBookResponse> => {
         try {
-            console.log("Calling axios.post with book:", book);
             const response = await axios.post<AddBookResponse>(API_BASE, book);
 
             await this.fetchBooks();
