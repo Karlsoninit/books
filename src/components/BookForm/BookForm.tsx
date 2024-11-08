@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import {BookFormProps} from "./BookForm.types";
+import {BookFormProps} from "./BookForm.type";
 
 
 export const BookForm: React.FC<BookFormProps> = ({createBook, handleClose}) => {

@@ -1,5 +1,5 @@
 import {useEffect} from 'react';
-import {AddBookResponse, Book, BookType} from "../types/Book.types";
+import {AddBookResponse, Book, BookType} from "../types/Book.type";
 import {bookController} from "../components/Book/Book.ctrl";
 import {bookStore} from "../store/BookStore";
 

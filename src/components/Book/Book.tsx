@@ -4,7 +4,6 @@ import {useBooks} from "../../hooks/useBooks";
 import {BookList} from "../BookList/BookList";
 import {Modal} from "../../uikit/modal/Modal";
 import {BookForm} from "../BookForm/BookForm";
-import {BookType} from "../../types/Book.types";
 
 
 export const Book: React.FC = observer(() => {
@@ -19,6 +18,9 @@ export const Book: React.FC = observer(() => {
 
     return (
         <>
+            <button onClick={handleOpenModal}>
+                Add Book
+            </button>
             <BookList books={books}/>
             {isOpen &&
                 <Modal onClose={handleOpenModal}><BookForm createBook={addBook} handleClose={handleOpenModal}/></Modal>}

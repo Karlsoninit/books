@@ -1,6 +1,6 @@
 import React from "react";
 import {createPortal} from 'react-dom';
-import styles from "./Modal.module.scss"
+import styles from "./Modal.module.css"
 
 export interface IModalProps {
     onClose: () => void;
