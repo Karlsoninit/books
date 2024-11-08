@@ -2,7 +2,7 @@ import axios from 'axios';
 import {runInAction} from 'mobx';
 
 import {bookStore} from '../../store/BookStore';
-import {AddBookResponse, API_BASE, Book, BookType} from "../../types/BookTypes";
+import {AddBookResponse, API_BASE, Book, BookType} from "../../types/Book.types";
 
 
 export class BookController {

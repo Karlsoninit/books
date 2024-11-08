@@ -1,5 +1,5 @@
 import {makeAutoObservable} from 'mobx';
-import {Book, BookType} from "../types/BookTypes"
+import {Book, BookType} from "../types/Book.types"
 
 class BookStore {
     books: Book[] = [];

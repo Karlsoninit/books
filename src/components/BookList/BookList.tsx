@@ -1,5 +1,5 @@
 import React from "react";
-import {Book} from "../../types/BookTypes";
+import {Book} from "../../types/Book.types";
 
 
 export const BookList: React.FC<{ books: Book[] }> = ({books}) => {
