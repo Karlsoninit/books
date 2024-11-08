@@ -6,3 +6,7 @@ export interface Book {
 }
 
 export type BookType = 'all' | 'private';
+
+export type AddBookResponse  ={
+    status: "Ok"
+} | boolean

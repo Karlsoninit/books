@@ -2,7 +2,8 @@ import axios from 'axios';
 import {runInAction} from 'mobx';
 
 import {bookStore} from '../../store/BookStore';
-import {Book, BookType} from "../../types/BookTypes";
+import {AddBookResponse, Book, BookType} from "../../types/BookTypes";
+
 
 export class BookController {
 
@@ -30,13 +31,13 @@ export class BookController {
         }
     }
 
-    addBook = async (book: Book) => {
+    addBook = async (book: Book): Promise<AddBookResponse> => {
         try {
-            console.log("Calling axios.post with book:", book);  //
-            const response = await axios.post<Book>('https://tdd.demo.reaktivate.com/v1/books/postnikov', book);
+            console.log("Calling axios.post with book:", book);
+            const response = await axios.post<AddBookResponse>('https://tdd.demo.reaktivate.com/v1/books/postnikov', book);
 
             await this.fetchBooks();
-            return response.status
+            return response.data
 
 
         } catch (error) {
