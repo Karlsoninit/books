@@ -1,9 +1,9 @@
 import React from 'react';
-import {Books} from "./components/Books/Books";
+import {Book} from "./components/Book/Book";
 
 function App() {
     return (
-        <><Books/></>
+        <><Book/></>
     );
 }
 

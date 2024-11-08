@@ -26,6 +26,10 @@ class BookStore {
     setBookType(type: BookType) {
         this.bookType = type;
     }
+
+    setError(error: string | null) {
+        this.error = error;
+    }
 }
 
 export const bookStore = new BookStore();
